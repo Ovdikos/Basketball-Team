@@ -1,0 +1,56 @@
+Basketball Team
+
+This database is designed to manage a basketball team. It contains information about teams, players, coaches, matches, sponsors, and statistics.
+
+	Main Tables
+
+1. Druzyna (Team)
+Stores information about basketball teams
+Key fields: Name, Foundation Year, Country of Origin
+Linked to Coach (Trener)
+
+
+2. Gracz (Player)
+Contains data about players
+Key fields: First Name, Last Name, Date of Birth, Number
+Connected to team and position
+
+
+3. Trener (Coach)
+Information about team coaches
+Key fields: First Name, Last Name, Date of Birth, Experience
+
+
+4. Mecz (Match)
+Details about matches
+Key fields: Match Date and Time, Home Team, Away Team, Score
+Connected to season and sports arena
+
+	Supporting Tables
+
+5. Statystyki (Statistics)				
+Stores statistical indicators
+Fields: Points, Assists, Rebounds
+
+
+6. Sponsor
+Information about sponsors
+Fields: Company, Industry, Contacts
+
+
+7. Hala_sportowa (Sports Arena)
+Data about sports facilities
+Fields: Name, Location, Capacity
+
+
+8. Sezon (Season)
+Information about seasons
+Fields: Number, Start Year, End Year
+
+								Sample Database Functionalities
+
+1. List all players from a specific team with their jersey numbers and positions
+2. Show all matches played in a specific sports arena during a given season
+3. Which companies are sponsoring the Los Angeles Lakers?
+4. What are the total points scored by LeBron James in all matches?
+5. List all sports arenas with their capacity and location
